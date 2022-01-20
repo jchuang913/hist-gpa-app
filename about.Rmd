@@ -1,0 +1,22 @@
+### Author
+
+- **Name:** Justin Huang
+- **Email:** justinh7@illinois.edu
+
+### Purpose
+
+The purpose of this web application is to provide and visualize information on historical student performance in every class at the University of Illinois at Urbana-Champaign. It provides the average GPAs of *each section* taught by *each instructor* of *each course* for *each semester* the course has been offered at UIUC. This web app may be useful to students trying to decide what classes to take and which instructors to take them with, as it allows them to easily see general trends and draw basic conclusions on how difficult a particular class might be.
+
+### Data
+
+The dataset used in this web application is the UIUC GPA dataset, which is publicly available on Professor Wade Fagen-Ulmschneider's `datasets` GitHub repository.
+
+The dataset contains 53,668 observations of 23 variables. Each observation represents a single section of a course, and contains the year, semester, course subject, course number, course title, schedule type, and primary instructor of that section. Each observation also contains the numbers of students in the section who received each letter grade (A+, A, A-, B+, etc.).
+
+I decided to use data from only the Fall and Spring semesters of each year, since classes taken during the Winter and Summer semesters are necessarily more fast-paced. This typically makes them more difficult, which could obviously have an unwanted effect on the corresponding grade data.
+
+All this information is sufficient to calculate the average GPA of each section, which enabled me to construct a semi-interactive visualization of the GPAs and how they changed over all the semesters the course was offered.
+
+### References
+
+Dataset: [UIUC GPA Dataset](https://github.com/wadefagen/datasets/tree/master/gpa)
